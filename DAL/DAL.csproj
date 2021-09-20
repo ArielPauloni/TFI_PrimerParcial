@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbonadoMapper.cs" />
     <Compile Include="AccesoSQL.cs" />
     <Compile Include="CiudadMapper.cs" />
     <Compile Include="LineaMapper.cs" />

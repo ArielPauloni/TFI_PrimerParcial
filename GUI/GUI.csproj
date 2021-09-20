@@ -132,6 +132,7 @@
     <Content Include="Datos\Lineas.aspx" />
     <Content Include="Datos\Llamadas.aspx" />
     <Content Include="Datos\NuevaLinea.aspx" />
+    <Content Include="Datos\NuevoAbonado.aspx" />
     <Content Include="Datos\Personas.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -336,6 +337,13 @@
     </Compile>
     <Compile Include="Datos\NuevaLinea.aspx.designer.cs">
       <DependentUpon>NuevaLinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\NuevoAbonado.aspx.cs">
+      <DependentUpon>NuevoAbonado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datos\NuevoAbonado.aspx.designer.cs">
+      <DependentUpon>NuevoAbonado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datos\Personas.aspx.cs">
       <DependentUpon>Personas.aspx</DependentUpon>

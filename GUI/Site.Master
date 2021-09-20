@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Primer Parcial TFI</title>
+    <title>Pauloni Ariel - Primer Parcial TFI</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -75,7 +75,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Primer Parcial TFI</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Primer Parcial TFI - Pauloni Ariel</p>
             </footer>
         </div>
 

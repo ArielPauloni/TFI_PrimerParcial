@@ -15,5 +15,11 @@ namespace BLL
             PersonaMapper m = new PersonaMapper();
             return m.Insertar(persona);
         }
+
+        public List<PersonaBE> Listar()
+        {
+            PersonaMapper m = new PersonaMapper();
+            return m.Listar();
+        }
     }
 }

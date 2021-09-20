@@ -22,6 +22,12 @@ namespace BLL
             return m.Listar();
         }
 
+        public List<LineaBE> ListarSinTitular()
+        {
+            LineaMapper m = new LineaMapper();
+            return m.ListarSinTitular();
+        }
+
         public int ActualizarLinea(LineaBE linea)
         {
             LineaMapper m = new LineaMapper();

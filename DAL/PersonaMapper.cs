@@ -21,5 +21,31 @@ namespace DAL
             parametros.Add(AccesoSQL.CrearParametroStr("NroDocumento", persona.NroDocumento));
             return AccesoSQL.Escribir("pr_Insertar_Persona", parametros);
         }
+
+        public List<PersonaBE> Listar()
+        {
+            List<PersonaBE> listaPersonas = new List<PersonaBE>();
+            AccesoSQL AccesoSQL = new AccesoSQL();
+            DataTable tabla = AccesoSQL.Leer("pr_Listar_Personas", null);
+            if (tabla != null)
+            {
+                foreach (DataRow fila in tabla.Rows)
+                {
+                    TipoDocumentoBE TipoDoc = new TipoDocumentoBE();
+                    TipoDoc.CodigoTipoDocumento = int.Parse(fila["CodigoTipoDocumento"].ToString());
+                    TipoDoc.DescripcionTipoDocumento = fila["DescripcionTipoDocumento"].ToString();
+
+                    PersonaBE persona = new PersonaBE();
+                    persona.CodigoPersona = int.Parse(fila["CodigoPersona"].ToString());
+                    persona.Apellido = fila["Apellido"].ToString();
+                    persona.Nombre = fila["Nombre"].ToString();
+                    persona.NroDocumento = fila["NroDocumento"].ToString();
+                    persona.TipoDocumento = TipoDoc;
+
+                    listaPersonas.Add(persona);
+                }
+            }
+            return listaPersonas;
+        }
     }
 }

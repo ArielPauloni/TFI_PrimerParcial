@@ -8,6 +8,14 @@ namespace BE
 {
     public class PersonaBE
     {
+        private int codigoPersona;
+
+        public int CodigoPersona
+        {
+            get { return codigoPersona; }
+            set { codigoPersona = value; }
+        }
+
         private string apellido;
 
         public string Apellido
