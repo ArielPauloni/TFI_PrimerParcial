@@ -65,6 +65,16 @@
                                 <li><a id="aAbonados" class="fa fa-user" runat="server" href="~/Datos/Abonados.aspx"> Abonados</a></li>
                                 <li><a id="aLinea" class="fa fa-phone" runat="server" href="~/Datos/Lineas.aspx"> Líneas</a></li>
                                 <li><a id="aLlamada" class="fa fa-volume-control-phone" runat="server" href="~/Datos/Llamadas.aspx"> Llamadas</a></li>
+                                <li><a id="aCostos" class="fa fa-money" runat="server" href="~/Datos/Costos.aspx"> Costos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="aConsultas" runat="server" class="dropdown-toggle fa fa-question" data-toggle="dropdown" href="#"> Consultas<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="aPto4" class="fa fa-question" runat="server" href="~/Consultas/Pto4.aspx"> Obtener cargos del mes por cliente</a></li>
+                                <li><a id="aPto5" class="fa fa-question" runat="server" href="~/Consultas/Pto5.aspx"> Obtener recaudación total por mes</a></li>
+                                <li><a id="aPto6" class="fa fa-question" runat="server" href="~/Consultas/Pto6.aspx"> Obtener recaudación mensual por promoción</a></li>
+                                <li><a id="aPto7" class="fa fa-question" runat="server" href="~/Consultas/Pto7.aspx"> Obtener porcentaje de llamadas (por tipo y por cliente)</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -107,6 +107,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consultas\Pto4.aspx" />
+    <Content Include="Consultas\Pto5.aspx" />
+    <Content Include="Consultas\Pto6.aspx" />
+    <Content Include="Consultas\Pto7.aspx" />
     <Content Include="Content\all.css" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -130,6 +134,7 @@
     <Content Include="Content\v4-shims.css" />
     <Content Include="Content\v4-shims.min.css" />
     <Content Include="Datos\Abonados.aspx" />
+    <Content Include="Datos\Costos.aspx" />
     <Content Include="Datos\Lineas.aspx" />
     <Content Include="Datos\Llamadas.aspx" />
     <Content Include="Datos\NuevaLinea.aspx" />
@@ -312,12 +317,47 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Consultas\Pto4.aspx.cs">
+      <DependentUpon>Pto4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Pto4.aspx.designer.cs">
+      <DependentUpon>Pto4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Pto5.aspx.cs">
+      <DependentUpon>Pto5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Pto5.aspx.designer.cs">
+      <DependentUpon>Pto5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Pto6.aspx.cs">
+      <DependentUpon>Pto6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Pto6.aspx.designer.cs">
+      <DependentUpon>Pto6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Pto7.aspx.cs">
+      <DependentUpon>Pto7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Pto7.aspx.designer.cs">
+      <DependentUpon>Pto7.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Datos\Abonados.aspx.cs">
       <DependentUpon>Abonados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Datos\Abonados.aspx.designer.cs">
       <DependentUpon>Abonados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Costos.aspx.cs">
+      <DependentUpon>Costos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datos\Costos.aspx.designer.cs">
+      <DependentUpon>Costos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datos\Lineas.aspx.cs">
       <DependentUpon>Lineas.aspx</DependentUpon>

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AbonadoBLL.cs" />
     <Compile Include="CiudadBLL.cs" />
+    <Compile Include="CostoBLL.cs" />
     <Compile Include="LineaBLL.cs" />
     <Compile Include="LlamadaBLL.cs" />
     <Compile Include="PaisBLL.cs" />

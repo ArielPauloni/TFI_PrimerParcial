@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AbonadoBE.cs" />
     <Compile Include="CiudadBE.cs" />
+    <Compile Include="CostoBE.cs" />
     <Compile Include="FacturaBE.cs" />
     <Compile Include="LineaBE.cs" />
     <Compile Include="LlamadaBE.cs" />

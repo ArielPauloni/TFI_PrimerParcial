@@ -7,108 +7,99 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace GUI {
+namespace GUI.Consultas {
     
     
-    public partial class SiteMaster {
+    public partial class Pto4 {
         
         /// <summary>
-        /// Control aDatos.
+        /// Control lblPto4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aDatos;
+        protected global::System.Web.UI.WebControls.Label lblPto4;
         
         /// <summary>
-        /// Control aAbonados.
+        /// Control lblAbonado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aAbonados;
+        protected global::System.Web.UI.WebControls.Label lblAbonado;
         
         /// <summary>
-        /// Control aLinea.
+        /// Control ddlAbonados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aLinea;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAbonados;
         
         /// <summary>
-        /// Control aLlamada.
+        /// Control lblAnio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aLlamada;
+        protected global::System.Web.UI.WebControls.Label lblAnio;
         
         /// <summary>
-        /// Control aCostos.
+        /// Control ddlAnio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aCostos;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAnio;
         
         /// <summary>
-        /// Control aConsultas.
+        /// Control lblMEs.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aConsultas;
+        protected global::System.Web.UI.WebControls.Label lblMEs;
         
         /// <summary>
-        /// Control aPto4.
+        /// Control ddlMes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aPto4;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMes;
         
         /// <summary>
-        /// Control aPto5.
+        /// Control btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aPto5;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// Control aPto6.
+        /// Control UpPanelDialog.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aPto6;
+        protected global::System.Web.UI.UpdatePanel UpPanelDialog;
         
         /// <summary>
-        /// Control aPto7.
+        /// Control UC_MensajeModal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aPto7;
-        
-        /// <summary>
-        /// Control MainContent.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::GUI.User_Controls.UC_MensajeModal UC_MensajeModal;
     }
 }

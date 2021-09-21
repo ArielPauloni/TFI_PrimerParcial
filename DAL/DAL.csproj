@@ -45,6 +45,7 @@
     <Compile Include="AbonadoMapper.cs" />
     <Compile Include="AccesoSQL.cs" />
     <Compile Include="CiudadMapper.cs" />
+    <Compile Include="CostoMapper.cs" />
     <Compile Include="LineaMapper.cs" />
     <Compile Include="LlamadaMapper.cs" />
     <Compile Include="PaisMapper.cs" />

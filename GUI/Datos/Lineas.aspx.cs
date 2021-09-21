@@ -76,7 +76,7 @@ namespace GUI.Datos
                 int i = gestorLinea.ActualizarLinea(linea);
                 if (i == 0)
                 {
-                    UC_MensajeModal.SetearMensaje("No se pudo actulizar el dato");
+                    UC_MensajeModal.SetearMensaje("No se pudo actualizar el dato");
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "mostrarMensaje()", true);
                 }
                 else
