@@ -22,6 +22,7 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/General.css" rel="stylesheet" />
 
 </head>
 <body>

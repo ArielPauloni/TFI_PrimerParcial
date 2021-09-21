@@ -31,5 +31,21 @@ namespace BE
             get { return linea; }
             set { linea = value; }
         }
+
+        private DateTime? fechaLlamada;
+
+        public DateTime? FechaLlamada
+        {
+            get { return fechaLlamada; }
+            set { fechaLlamada = value; }
+        }
+
+        private short minutosDuracion;
+
+        public short MinutosDuracion
+        {
+            get { return minutosDuracion; }
+            set { minutosDuracion = value; }
+        }
     }
 }

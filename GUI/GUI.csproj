@@ -119,6 +119,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\General.css" />
     <Content Include="Content\regular.css" />
     <Content Include="Content\regular.min.css" />
     <Content Include="Content\Site.css" />
@@ -132,6 +133,7 @@
     <Content Include="Datos\Lineas.aspx" />
     <Content Include="Datos\Llamadas.aspx" />
     <Content Include="Datos\NuevaLinea.aspx" />
+    <Content Include="Datos\NuevaLlamada.aspx" />
     <Content Include="Datos\NuevoAbonado.aspx" />
     <Content Include="Datos\Personas.aspx" />
     <Content Include="favicon.ico" />
@@ -337,6 +339,13 @@
     </Compile>
     <Compile Include="Datos\NuevaLinea.aspx.designer.cs">
       <DependentUpon>NuevaLinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\NuevaLlamada.aspx.cs">
+      <DependentUpon>NuevaLlamada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datos\NuevaLlamada.aspx.designer.cs">
+      <DependentUpon>NuevaLlamada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datos\NuevoAbonado.aspx.cs">
       <DependentUpon>NuevoAbonado.aspx</DependentUpon>

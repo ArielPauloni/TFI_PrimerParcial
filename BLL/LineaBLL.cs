@@ -33,5 +33,11 @@ namespace BLL
             LineaMapper m = new LineaMapper();
             return m.Actualizar(linea);
         }
+
+        public LineaBE ObtenerLinea(LineaBE lineaDestino)
+        {
+            LineaMapper m = new LineaMapper();
+            return m.ListarLinea(lineaDestino);
+        }
     }
 }

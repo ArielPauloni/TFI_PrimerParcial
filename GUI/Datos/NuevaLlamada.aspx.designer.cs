@@ -10,25 +10,7 @@
 namespace GUI.Datos {
     
     
-    public partial class Llamadas {
-        
-        /// <summary>
-        /// Control btnMostrarFiltros.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnMostrarFiltros;
-        
-        /// <summary>
-        /// Control divFiltros.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divFiltros;
+    public partial class NuevaLlamada {
         
         /// <summary>
         /// Control lblAbonado.
@@ -49,75 +31,93 @@ namespace GUI.Datos {
         protected global::System.Web.UI.WebControls.DropDownList ddlAbonados;
         
         /// <summary>
-        /// Control lblFechaDesde.
+        /// Control lblTipoServicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFechaDesde;
+        protected global::System.Web.UI.WebControls.Label lblTipoServicio;
         
         /// <summary>
-        /// Control txtFechaDesde.
+        /// Control ddlLineaDestino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaDesde;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLineaDestino;
         
         /// <summary>
-        /// Control lblFechaHasta.
+        /// Control lblFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFechaHasta;
+        protected global::System.Web.UI.WebControls.Label lblFecha;
         
         /// <summary>
-        /// Control txtFechaHasta.
+        /// Control txtFechaLlamada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaHasta;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaLlamada;
         
         /// <summary>
-        /// Control btnFiltrar.
+        /// Control lblDuracionLlamada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnFiltrar;
+        protected global::System.Web.UI.WebControls.Label lblDuracionLlamada;
         
         /// <summary>
-        /// Control btnLimpiarFiltros.
+        /// Control txtMinutosDuracion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnLimpiarFiltros;
+        protected global::System.Web.UI.WebControls.TextBox txtMinutosDuracion;
         
         /// <summary>
-        /// Control grvLlamadas.
+        /// Control btnGrabar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvLlamadas;
+        protected global::System.Web.UI.WebControls.Button btnGrabar;
         
         /// <summary>
-        /// Control btnNuevaLlamada.
+        /// Control btnCancelar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNuevaLlamada;
+        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        
+        /// <summary>
+        /// Control UpPanelDialog.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpPanelDialog;
+        
+        /// <summary>
+        /// Control UC_MensajeModal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::GUI.User_Controls.UC_MensajeModal UC_MensajeModal;
     }
 }

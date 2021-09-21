@@ -23,15 +23,7 @@ namespace BE
             get { return persona; }
             set { persona = value; }
         }
-        
-        private DateTime? fechaAlta;
-
-        public DateTime? FechaAlta
-        {
-            get { return fechaAlta; }
-            set { fechaAlta = value; }
-        }
-
+      
         private bool inactivo;
 
         public bool Inactivo
@@ -46,6 +38,11 @@ namespace BE
         {
             get { return linea; }
             set { linea = value; }
+        }
+
+        public override string ToString()
+        {
+            return Persona.ToString() + " | " + Linea.ToString();
         }
     }
 }

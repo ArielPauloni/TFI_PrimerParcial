@@ -1,0 +1,38 @@
+﻿body, html, form {
+}
+
+.itemInit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.th {
+    text-align: center;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: lightgrey;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-align: center;
+    background-color: lightgrey;
+    font-weight: bold;
+}

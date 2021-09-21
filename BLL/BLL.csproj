@@ -44,6 +44,7 @@
     <Compile Include="AbonadoBLL.cs" />
     <Compile Include="CiudadBLL.cs" />
     <Compile Include="LineaBLL.cs" />
+    <Compile Include="LlamadaBLL.cs" />
     <Compile Include="PaisBLL.cs" />
     <Compile Include="PersonaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

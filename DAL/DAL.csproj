@@ -46,6 +46,7 @@
     <Compile Include="AccesoSQL.cs" />
     <Compile Include="CiudadMapper.cs" />
     <Compile Include="LineaMapper.cs" />
+    <Compile Include="LlamadaMapper.cs" />
     <Compile Include="PaisMapper.cs" />
     <Compile Include="PersonaMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

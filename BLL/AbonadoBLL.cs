@@ -21,5 +21,11 @@ namespace BLL
             AbonadoMapper m = new AbonadoMapper();
             return m.Listar();
         }
+
+        public AbonadoBE ObtenerAbonado(AbonadoBE abonado)
+        {
+            AbonadoMapper m = new AbonadoMapper();
+            return m.Obtener(abonado);
+        }
     }
 }
