@@ -75,6 +75,7 @@ namespace DAL
                     AbonadoBE abonado = new AbonadoBE
                     {
                         NroAbonado = int.Parse(fila["NroAbonado"].ToString()),
+                        FechaAlta = (DateTime)fila["FechaAlta"],
                         Persona = persona,
                         Linea = linea
                     };
@@ -138,6 +139,74 @@ namespace DAL
                     AbonadoBE abonado = new AbonadoBE
                     {
                         NroAbonado = int.Parse(fila["NroAbonado"].ToString()),
+                        FechaAlta = (DateTime)fila["FechaAlta"],
+                        Persona = persona,
+                        Linea = linea
+                    };
+
+                    listaAbonados.Add(abonado);
+                }
+            }
+            return listaAbonados;
+        }
+
+        public List<AbonadoBE> ObtenerAbonadosDelMes(DateTime? fecha)
+        {
+            List<AbonadoBE> listaAbonados = new List<AbonadoBE>();
+            AccesoSQL AccesoSQL = new AccesoSQL();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(AccesoSQL.CrearParametroDate("fecha", fecha));
+            DataTable tabla = AccesoSQL.Leer("pr_Listar_AbonadosDelMes", parametros);
+            if (tabla != null)
+            {
+                foreach (DataRow fila in tabla.Rows)
+                {
+                    TipoServicioBE TipoServ = new TipoServicioBE
+                    {
+                        CodigoTipoServicio = int.Parse(fila["CodigoTipoServicio"].ToString()),
+                        DescripcionTipoServicio = fila["DescripcionTipoServicio"].ToString()
+                    };
+
+                    PaisBE pais = new PaisBE
+                    {
+                        CodigoPais = int.Parse(fila["CodigoPais"].ToString()),
+                        PaisDescripcion = fila["DescripcionPais"].ToString()
+                    };
+
+                    CiudadBE ciudad = new CiudadBE
+                    {
+                        CodigoCiudad = int.Parse(fila["CodigoCiudad"].ToString()),
+                        CiudadDescripcion = fila["DescripcionCiudad"].ToString(),
+                        Pais = pais
+                    };
+
+                    LineaBE linea = new LineaBE
+                    {
+                        CodigoLinea = int.Parse(fila["CodigoLinea"].ToString()),
+                        NroLinea = fila["NroLinea"].ToString(),
+                        Ciudad = ciudad,
+                        TipoServicio = TipoServ,
+                        PrefijoLinea = fila["PrefijoLinea"].ToString()
+                    };
+
+                    TipoDocumentoBE tipoDoc = new TipoDocumentoBE
+                    {
+                        CodigoTipoDocumento = int.Parse(fila["CodigoTipoDocumento"].ToString()),
+                        DescripcionTipoDocumento = fila["DescripcionTipoDocumento"].ToString()
+                    };
+
+                    PersonaBE persona = new PersonaBE()
+                    {
+                        CodigoPersona = int.Parse(fila["CodigoPersona"].ToString()),
+                        Apellido = fila["Apellido"].ToString(),
+                        Nombre = fila["Nombre"].ToString(),
+                        TipoDocumento = tipoDoc,
+                        NroDocumento = fila["NroDocumento"].ToString(),
+                    };
+                    AbonadoBE abonado = new AbonadoBE
+                    {
+                        NroAbonado = int.Parse(fila["NroAbonado"].ToString()),
+                        FechaAlta = (DateTime)fila["FechaAlta"],
                         Persona = persona,
                         Linea = linea
                     };

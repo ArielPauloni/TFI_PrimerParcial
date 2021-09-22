@@ -10,7 +10,33 @@
         <br />
         <br />
     </div>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <asp:Label ID="lblAbonado" runat="server" Text="Abonado:"></asp:Label>
+                <asp:DropDownList ID="ddlAbonados" runat="server" CssClass="form-control"></asp:DropDownList>
+            </div>
+        </div>
 
+        <div class="form-group">
+            <asp:Button ID="btnConsultar" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar Por Abonado" OnClick="btnConsultar_Click" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <asp:Label ID="Label1" runat="server" Text="Abonado:"></asp:Label>
+                <asp:DropDownList ID="ddlTipoLlamada" runat="server" CssClass="form-control">
+                    <asp:ListItem>Nacional</asp:ListItem>
+                    <asp:ListItem>Internacional</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <asp:Button ID="Button1" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar Por Tipo" OnClick="btnConsultar2_Click" />
+        </div>
+    </div>
 
     <div class="modal fade" id="MensajeModal" tabindex="-1" role="dialog" aria-labelledby="MensajeModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

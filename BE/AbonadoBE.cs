@@ -40,6 +40,15 @@ namespace BE
             set { linea = value; }
         }
 
+        private DateTime fechaAlta;
+
+        public DateTime FechaAlta
+        {
+            get { return fechaAlta; }
+            set { fechaAlta = value; }
+        }
+
+
         public override string ToString()
         {
             return Persona.ToString() + " | " + Linea.ToString();

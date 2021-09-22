@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pto4.aspx.cs" Inherits="GUI.Consultas.Pto4"  MasterPageFile="~/Site.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pto4.aspx.cs" Inherits="GUI.Consultas.Pto4" MasterPageFile="~/Site.Master" %>
 
 <%@ Register Src="~/User_Controls/UC_MensajeModal.ascx" TagPrefix="uc1" TagName="UC_MensajeModal" %>
 
@@ -19,7 +19,6 @@
             <div class="form-group col-md-3">
                 <asp:Label ID="lblAnio" runat="server" Text="Año:"></asp:Label>
                 <asp:DropDownList ID="ddlAnio" CssClass="form-control" runat="server">
-                    <asp:ListItem>2020</asp:ListItem>
                     <asp:ListItem>2021</asp:ListItem>
                     <asp:ListItem>2022</asp:ListItem>
                     <asp:ListItem>2023</asp:ListItem>
@@ -32,12 +31,36 @@
                 <asp:DropDownList ID="ddlMes" CssClass="form-control" runat="server"></asp:DropDownList>
             </div>
         </div>
-        
+
         <div class="form-group">
-            <asp:Button ID="btnBuscar" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Buscar" OnClick="btnBuscarar_Click" />
+            <asp:Button ID="btnConsultar" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar" OnClick="btnConsultar_Click" />
         </div>
     </div>
 
+    <div id="divResultados" runat="server" visible="false" class="container">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <asp:GridView ID="grvCargosDelMes" runat="server" AllowSorting="True" Caption="Abonados"
+                    AutoGenerateColumns="False" AllowPaging="True" PageSize="10" EnableTheming="True">
+                    <AlternatingRowStyle BackColor="#CCFFFF" />
+                    <Columns>
+                        <asp:BoundField DataField="Abonado" HeaderText="Abonado">
+                            <HeaderStyle CssClass="th" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="Linea" HeaderText="Destino">
+                            <HeaderStyle CssClass="th" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="FechaLlamada" HeaderText="Fecha de Llamada" ItemStyle-HorizontalAlign="Center" DataFormatString="{0:dd/MM/yyyy}">
+                            <HeaderStyle CssClass="th" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="MinutosDuracion" HeaderText="Duración (en minutos)" ItemStyle-HorizontalAlign="Center">
+                            <HeaderStyle CssClass="th" />
+                        </asp:BoundField>
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="MensajeModal" tabindex="-1" role="dialog" aria-labelledby="MensajeModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

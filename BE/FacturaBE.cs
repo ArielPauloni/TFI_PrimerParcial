@@ -48,6 +48,15 @@ namespace BE
             set { llamadas = value; }
         }
 
+        private string detalle;
+
+        public string Detalle
+        {
+            get { return detalle; }
+            set { detalle = value; }
+        }
+
+
         private double costoTotal;
 
         public double CostoTotal

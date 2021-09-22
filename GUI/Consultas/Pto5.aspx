@@ -10,7 +10,28 @@
         <br />
         <br />
     </div>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <asp:Label ID="lblAnio" runat="server" Text="Año:"></asp:Label>
+                <asp:DropDownList ID="ddlAnio" CssClass="form-control" runat="server">
+                    <asp:ListItem>2021</asp:ListItem>
+                    <asp:ListItem>2022</asp:ListItem>
+                    <asp:ListItem>2023</asp:ListItem>
+                    <asp:ListItem>2024</asp:ListItem>
+                    <asp:ListItem>2025</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="form-group col-md-6">
+                <asp:Label ID="lblMEs" runat="server" Text="Mes:"></asp:Label>
+                <asp:DropDownList ID="ddlMes" CssClass="form-control" runat="server"></asp:DropDownList>
+            </div>
+        </div>
 
+        <div class="form-group">
+            <asp:Button ID="btnConsultar" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar" OnClick="btnConsultar_Click" />
+        </div>
+    </div>
 
     <div class="modal fade" id="MensajeModal" tabindex="-1" role="dialog" aria-labelledby="MensajeModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

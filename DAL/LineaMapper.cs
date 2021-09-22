@@ -46,6 +46,17 @@ namespace DAL
             return listaLineas;
         }
 
+        public bool LineaEsDeAbonado(LineaBE linea)
+        {
+            bool retVal = false;
+            AccesoSQL AccesoSQL = new AccesoSQL();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(AccesoSQL.CrearParametroInt("CodigoLinea", linea.CodigoLinea));
+            DataTable tabla = AccesoSQL.Leer("pr_Listar_LineaConAbonado", parametros);
+            if ((tabla != null) && (tabla.Rows.Count > 0)){ retVal = true; }
+            return retVal;
+        }
+
         public LineaBE ListarLinea(LineaBE lineaDestino)
         {
             AccesoSQL AccesoSQL = new AccesoSQL();
