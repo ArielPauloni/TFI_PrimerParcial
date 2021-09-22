@@ -75,7 +75,7 @@ namespace GUI.Datos
                 }
                 else
                 {
-                    UC_MensajeModal.SetearMensaje("No se pudo grabar. Formato de dato invpalido");
+                    UC_MensajeModal.SetearMensaje("No se pudo grabar. Formato de dato inválido");
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "mostrarMensaje()", true);
                 }
             }

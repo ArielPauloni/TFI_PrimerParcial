@@ -85,5 +85,13 @@ namespace GUI.Datos
             grvLlamadas.DataBind();
         }
         #endregion
+
+        protected void grvLlamadas_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grvLlamadas.PageIndex = e.NewPageIndex;
+            grvLlamadas.EditIndex = -1;
+            grvLlamadas.DataSource = gestorLlamadas.Listar();
+            grvLlamadas.DataBind();
+        }
     }
 }

@@ -4,7 +4,7 @@
     <br />
     <div class="form-group col-md-12">
         <asp:GridView ID="grvAbonados" runat="server" AllowSorting="True" Caption="Abonados"
-            AutoGenerateColumns="False" AllowPaging="True" PageSize="10" EnableTheming="True">
+            AutoGenerateColumns="False" AllowPaging="True" PageSize="10" EnableTheming="True" OnPageIndexChanging="grvAbonados_PageIndexChanging">
             <AlternatingRowStyle BackColor="#CCFFFF" />
             <Columns>
                 <asp:BoundField DataField="Persona" HeaderText="Persona">

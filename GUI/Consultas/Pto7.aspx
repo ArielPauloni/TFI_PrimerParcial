@@ -23,18 +23,18 @@
         </div>
     </div>
     <div class="container">
-        <div class="form-row">
+        <%--<div class="form-row">
             <div class="form-group col-md-12">
-                <asp:Label ID="Label1" runat="server" Text="Abonado:"></asp:Label>
+                <asp:Label ID="lblTipoLlamada" runat="server" Text="Tipo llamada:"></asp:Label>
                 <asp:DropDownList ID="ddlTipoLlamada" runat="server" CssClass="form-control">
                     <asp:ListItem>Nacional</asp:ListItem>
                     <asp:ListItem>Internacional</asp:ListItem>
                 </asp:DropDownList>
             </div>
-        </div>
+        </div>--%>
 
         <div class="form-group">
-            <asp:Button ID="Button1" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar Por Tipo" OnClick="btnConsultar2_Click" />
+            <asp:Button ID="btnConsultarPorTipo" CssClass="btn btn-primary fa fa-search" runat="server" Text=" Consultar Por Tipo" OnClick="btnConsultar2_Click" />
         </div>
     </div>
 

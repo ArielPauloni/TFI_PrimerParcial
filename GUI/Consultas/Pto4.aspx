@@ -41,13 +41,13 @@
         <div class="form-row">
             <div class="form-group col-md-12">
                 <asp:GridView ID="grvCargosDelMes" runat="server" AllowSorting="True" Caption="Abonados"
-                    AutoGenerateColumns="False" AllowPaging="True" PageSize="10" EnableTheming="True">
+                    AutoGenerateColumns="False" AllowPaging="True" PageSize="10" EnableTheming="True" OnPageIndexChanging="grvCargosDelMes_PageIndexChanging">
                     <AlternatingRowStyle BackColor="#CCFFFF" />
                     <Columns>
                         <asp:BoundField DataField="Abonado" HeaderText="Abonado">
                             <HeaderStyle CssClass="th" />
                         </asp:BoundField>
-                        <asp:BoundField DataField="Linea" HeaderText="Destino">
+                        <asp:BoundField DataField="LineaDestino" HeaderText="Destino">
                             <HeaderStyle CssClass="th" />
                         </asp:BoundField>
                         <asp:BoundField DataField="FechaLlamada" HeaderText="Fecha de Llamada" ItemStyle-HorizontalAlign="Center" DataFormatString="{0:dd/MM/yyyy}">

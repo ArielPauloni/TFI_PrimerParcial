@@ -55,7 +55,7 @@ namespace GUI.Datos
                 LlamadaBE llamada = new LlamadaBE
                 {
                     Abonado = miAbonado,
-                    Linea = miLineaDestino,
+                    LineaDestino = miLineaDestino,
                     FechaLlamada = DateTime.ParseExact(txtFechaLlamada.Text, "yyyy-MM-dd", null),
                     MinutosDuracion = short.Parse(txtMinutosDuracion.Text)
                 };

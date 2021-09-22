@@ -24,12 +24,12 @@ namespace BE
             set { abonado = value; }
         }
 
-        private LineaBE linea;
+        private LineaBE lineaDestino;
 
-        public LineaBE Linea
+        public LineaBE LineaDestino
         {
-            get { return linea; }
-            set { linea = value; }
+            get { return lineaDestino; }
+            set { lineaDestino = value; }
         }
 
         private DateTime? fechaLlamada;

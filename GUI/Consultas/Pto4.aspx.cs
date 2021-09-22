@@ -54,6 +54,8 @@ namespace GUI.Consultas
                 List<LlamadaBE> llamadasDelMes = gestorLlamadas.ListarPorAbonadoMasFecha(abonado, fDesde, fHasta);
                 miAbonado = gestorAbonados.ObtenerAbonado(abonado);
 
+                Session["LlamadasDelMesPto4"] = llamadasDelMes;
+
                 FacturaBE factura = new FacturaBE();
                 factura = gestorFacturas.ArmarFactura(miAbonado, llamadasDelMes, fHasta);
 
@@ -71,6 +73,14 @@ namespace GUI.Consultas
                 UC_MensajeModal.SetearMensaje("Por favor, seleccione un abonado");
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "mostrarMensaje()", true);
             }
+        }
+
+        protected void grvCargosDelMes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grvCargosDelMes.PageIndex = e.NewPageIndex;
+            grvCargosDelMes.EditIndex = -1;
+            grvCargosDelMes.DataSource = Session["LlamadasDelMesPto4"];
+            grvCargosDelMes.DataBind();
         }
     }
 }

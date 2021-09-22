@@ -18,7 +18,6 @@ namespace GUI.Datos
             if (!IsPostBack)
             {
                 grvAbonados.DataSource = gestorAbonados.Listar();
-
                 grvAbonados.DataBind();
             }
         }
@@ -31,6 +30,14 @@ namespace GUI.Datos
         protected void btnNuevoAbonado_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Datos/NuevoAbonado.aspx");
+        }
+
+        protected void grvAbonados_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grvAbonados.PageIndex = e.NewPageIndex;
+            grvAbonados.EditIndex = -1;
+            grvAbonados.DataSource = gestorAbonados.Listar();
+            grvAbonados.DataBind();
         }
     }
 }

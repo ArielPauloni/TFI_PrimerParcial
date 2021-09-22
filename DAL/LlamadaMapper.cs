@@ -16,7 +16,7 @@ namespace DAL
             AccesoSQL AccesoSQL = new AccesoSQL();
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(AccesoSQL.CrearParametroInt("NroAbonado", llamada.Abonado.NroAbonado));
-            parametros.Add(AccesoSQL.CrearParametroInt("CodigoLinea", llamada.Linea.CodigoLinea));
+            parametros.Add(AccesoSQL.CrearParametroInt("CodigoLinea", llamada.LineaDestino.CodigoLinea));
             parametros.Add(AccesoSQL.CrearParametroDate("FechaLlamada", llamada.FechaLlamada));
             parametros.Add(AccesoSQL.CrearParametroInt("MinutosDuracion", llamada.MinutosDuracion));
             return AccesoSQL.Escribir("pr_Insertar_Llamada", parametros);
@@ -117,7 +117,7 @@ namespace DAL
                     LlamadaBE llamada = new LlamadaBE
                     {
                         Abonado = abonado,
-                        Linea = linea,
+                        LineaDestino = linea,
                         FechaLlamada = fecha,
                         MinutosDuracion = short.Parse(fila["MinutosDuracion"].ToString()),
                     };
@@ -229,7 +229,7 @@ namespace DAL
                     LlamadaBE llamada = new LlamadaBE
                     {
                         Abonado = abonado,
-                        Linea = linea,
+                        LineaDestino = linea,
                         FechaLlamada = fecha,
                         MinutosDuracion = short.Parse(fila["MinutosDuracion"].ToString()),
                     };
